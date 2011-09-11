@@ -1,0 +1,5 @@
+#!/bin/sh
+javac -d bin -cp .:src:lib/craftbukkit-0.0.1-SNAPSHOT.jar -target 1.5 src/net/minecraft/server/*.java
+cp lib/craftbukkit-0.0.1-SNAPSHOT.jar bin/craftbukkit-retrosurvival.jar
+cd bin
+zip -r craftbukkit-retrosurvival.jar net
