@@ -1007,11 +1007,6 @@ public class NetServerHandler extends NetHandler implements ICommandListener {
         }
     }
 
-    public void a(Packet254ServerPing packet) { //RetroSurvival start
-        a.info("Ping request.");
-        this.sendPacket(new Packet255KickDisconnect("A Minecraft 1.7.3 Server modified for 1.8§0§1"));
-    } //RetroSurvival end
-
     public boolean c() {
         return true;
     }

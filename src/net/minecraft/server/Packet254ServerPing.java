@@ -10,13 +10,13 @@ public class Packet254ServerPing extends Packet {
     public Packet254ServerPing() {}
 
     public void a(NetHandler nethandler) {
+        nethandler.a(this);
     } 
 
     public void a(DataInputStream datainputstream) throws IOException {
     } 
 
     public void a(DataOutputStream dataoutputstream) throws IOException {
-        dataoutputstream.writeInt(0);
     }
 
     public int a() {
