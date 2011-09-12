@@ -24,7 +24,7 @@ public class Packet8UpdateHealth extends Packet {
     public void a(DataOutputStream dataoutputstream) throws IOException {
         dataoutputstream.writeShort(this.a);
         dataoutputstream.writeShort(20);
-        dataoutputstream.writeFloat(0.0f);
+        dataoutputstream.writeFloat(5.0f);
     } //RetroSurvival end
 
     public void a(NetHandler nethandler) {
