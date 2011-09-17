@@ -29,17 +29,19 @@ public class Packet1Login extends Packet {
         datainputstream.readInt(); //RetroSurvival start
         this.d = datainputstream.readByte();
         datainputstream.readByte();
+        datainputstream.readByte();
         datainputstream.readByte(); //Retrosurvival end
     }
 
     public void a(DataOutputStream dataoutputstream) throws IOException {
-        dataoutputstream.writeInt(15); //RetroSurvival: Protocol 15
+        dataoutputstream.writeInt(17); //RetroSurvival: Protocol 17
         a(this.name, dataoutputstream);
         dataoutputstream.writeLong(this.c);
         dataoutputstream.writeInt(0);
         dataoutputstream.writeByte(this.d);
+        dataoutputstream.writeByte(1);
         dataoutputstream.writeByte(128);
-        dataoutputstream.writeByte(150);
+        dataoutputstream.writeByte(0);
     }
 
     public void a(NetHandler nethandler) {
@@ -48,6 +50,6 @@ public class Packet1Login extends Packet {
 
     public int a() {
         //return 4 + this.name.length() + 4 + 5;
-        return 4 + 2 + (this.name.length() * 2) + 8 + 4 + 3; //RetroSurvival: Packet size
+        return 4 + 2 + (this.name.length() * 2) + 8 + 4 + 4; //RetroSurvival: Packet size
     }
 }

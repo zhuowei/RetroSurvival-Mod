@@ -104,7 +104,7 @@ public class NetLoginHandler extends NetHandler {
         this.c = true;
     }
 
-    public void a(Packet254ServerPing packet) { //RetroSurvival start
+    public void a(Packet254GetInfo packet) { //RetroSurvival start
         String message = this.server.propertyManager.getString("motd", "A RetroSurvival Server") + "§" + this.server.serverConfigurationManager.players.size() + "§" + 
 		this.server.serverConfigurationManager.maxPlayers;
         try {

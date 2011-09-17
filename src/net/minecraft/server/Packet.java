@@ -210,7 +210,7 @@ public abstract class Packet {
         a(130, true, true, Packet130UpdateSign.class);
         a(131, true, false, Packet131.class);
         a(200, true, false, Packet200Statistic.class);
-        a(254, false, true, Packet254ServerPing.class); //RetroSurvival -- server ping
+        a(254, false, true, Packet254GetInfo.class); //RetroSurvival -- server ping
         a(255, true, true, Packet255KickDisconnect.class);
         e = new HashMap();
         f = 0;

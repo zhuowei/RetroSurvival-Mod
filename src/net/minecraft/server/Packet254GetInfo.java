@@ -5,9 +5,9 @@ import java.io.IOException;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 
-public class Packet254ServerPing extends Packet {
+public class Packet254GetInfo extends Packet {
 
-    public Packet254ServerPing() {}
+    public Packet254GetInfo() {}
 
     public void a(NetHandler nethandler) {
         nethandler.a(this);

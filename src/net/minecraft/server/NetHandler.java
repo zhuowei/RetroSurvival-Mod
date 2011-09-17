@@ -208,7 +208,7 @@ public abstract class NetHandler {
         this.a((Packet) packet61);
     }
 
-    public void a(Packet254ServerPing packet254serverping) { //RetroSurvival start
-        this.a((Packet) packet254serverping);
+    public void a(Packet254GetInfo packet254getinfo) { //RetroSurvival start
+        this.a((Packet) packet254getinfo);
     } //RetroSurvival end
 }

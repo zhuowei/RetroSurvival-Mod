@@ -22,18 +22,20 @@ public class Packet9Respawn extends Packet {
     public void a(DataInputStream datainputstream) throws IOException { //RetroSurvival start
         this.a = datainputstream.readByte();
         datainputstream.readByte();
+        datainputstream.readByte();
         datainputstream.readShort();
         datainputstream.readLong();
     }
 
     public void a(DataOutputStream dataoutputstream) throws IOException {
         dataoutputstream.writeByte(this.a);
-        dataoutputstream.writeByte(0);
+        dataoutputstream.writeByte(1);
+        dataoutputstream.writeByte(1);
         dataoutputstream.writeShort(128);
         dataoutputstream.writeLong(42); //RetroSurvival: Don't send the seed
     } //RetroSurvival end
 
     public int a() {
-        return 1 + 1 + 2 + 8;
+        return 1 + 1 + 1 + 2 + 8;
     }
 }
